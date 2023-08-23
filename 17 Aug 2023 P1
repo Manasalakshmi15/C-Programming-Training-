@@ -1,0 +1,18 @@
+Write a hello world program. Include comments with code explanation.
+
+#include<stdio.h> 
+// #include is a preprocesor directive that helps including the header files in the program before the main execution of code.
+This enables us to perform the required opertion of header files.
+// stdio.h is the header file that include all input/output function details.
+
+int main () 
+// This is starting point of main program. It is int type so by the end of main of program it should return some value. 
+This is ensure that program has been sucessfully run.The usage of culry braces indicate the begining and ending of the program.
+
+{
+ printf("Hello world"); 
+ // printf is the output command. Displays the statement inside the quotes on the console screen.
+ 
+ return 0;
+ //The main is declared as int type. So returning 0 value to the main function ensures that program is sucessfully run.
+}
