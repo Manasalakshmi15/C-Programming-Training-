@@ -1,0 +1,10 @@
+Write a program to declare a variable of type unsigned int and input a negative value. 
+Print using various format specifiers and observe the outputs.
+
+#include<stdio.h>
+int main()
+{
+  char ar='-5';
+  printf("%c", ar);
+  return 0;
+}
