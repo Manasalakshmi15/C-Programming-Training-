@@ -1,0 +1,14 @@
+Write a program to print "Hi" if a macro 'a' is defined, "bye" if not defined
+#include <stdio.h>
+
+#ifdef a 
+    #define GREETING "Hi"
+#else
+    #define GREETING "Bye"
+#endif
+
+int main() {
+
+    printf("%s\n", GREETING);
+    return 0;
+}
