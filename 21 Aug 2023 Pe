@@ -1,0 +1,14 @@
+Given an ASCII value, print the corresponding character.
+
+#include <stdio.h>
+
+int main() {
+    int asciiValue;
+
+    printf("Enter an ASCII value: ");
+    scanf("%d", &asciiValue);
+
+    // Print the corresponding character
+    printf("The character for ASCII value %d is: %c\n", asciiValue, asciiValue);
+    return 0;
+}
