@@ -1,0 +1,13 @@
+Write a program to add two floating point numbers and display the result upto 20 decimal points. Observe the output and report the behaviour with reasons.
+
+#include <stdio.h>
+
+int main() {
+    float num1 = 3.14159;
+    float num2 = 2.71828;
+    float sum = num1 + num2;
+    
+    printf("%.20f\n", sum);
+    
+    return 0;
+}
