@@ -1,0 +1,13 @@
+Write a program to initialize an integer, floating type number, character, long integer and unsigned long integer and print them.
+
+#include <stdio.h>
+int main()
+{
+  int a= 247;
+  float r= 178.0247;
+  char mychar='a';
+  long l= 374474665;
+  unsigned long m = 26784847444644545;
+  printf("%d %f %c %ld %lu", a,r,mychar,l,u);
+  return 0;
+}
