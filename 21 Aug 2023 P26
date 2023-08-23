@@ -1,0 +1,9 @@
+Write a program to intialize a variable named after a keyword. Try printing the variable and observe the output.
+
+#include<stdio.h>
+int main()
+{
+  int if = 5;
+  printf("%d",if);
+  return 0;
+}
