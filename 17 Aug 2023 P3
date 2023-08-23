@@ -1,0 +1,28 @@
+Write a program to print a block 'F' using hash (#) characters, where F has a height of 6 characters and width of 5 characters.
+#include <stdio.h>
+
+int main() 
+{
+    
+    printf("#####\n");
+    printf("#\n");
+    printf("#\n");
+    printf("#####\n");
+    printf("#\n");
+    printf("#\n\n");
+    return 0;
+}
+
+Write a program to print a block 'F' using hash (#) characters, where F has a height of 6 characters and width of 5 characters.
+#include <stdio.h>
+
+int main() 
+{
+    printf("  ####\n");
+    printf("##    \n");
+    printf("#     \n");
+    printf("#     \n");
+    printf("##    \n");
+    printf("  ####\n");
+    return 0;
+}
