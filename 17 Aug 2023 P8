@@ -1,0 +1,10 @@
+Write a program to initialize an integer and print it.
+#include <stdio.h>
+
+int main() {
+    int number = 47;
+
+    printf("The integer is: %d\n", number);
+
+    return 0;
+}
