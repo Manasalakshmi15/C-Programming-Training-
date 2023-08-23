@@ -1,0 +1,18 @@
+Write a program to convert any uppercase alphabet to lowercase.
+#include <stdio.h>
+#include <ctype.h>
+
+int main() 
+{
+    char uppercaseChar, lowercaseChar;
+
+    printf("Enter an uppercase alphabet: ");
+    scanf("%c", &uppercaseChar);
+
+    // Convert to lowercase using tolower() function
+    lowercaseChar = tolower(uppercaseChar);
+
+    printf("The lowercase equivalent is: %c\n", lowercaseChar);
+
+    return 0;
+}
