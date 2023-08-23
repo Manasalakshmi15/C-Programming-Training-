@@ -1,4 +1,4 @@
-Write a program using printf() demonstatring the fiels of length, width and precision.
+Write a program using printf() demonstatring the fiedls of length, width and precision.
 
 #include<stdio.h>
 int main()
