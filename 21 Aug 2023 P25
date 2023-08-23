@@ -1,0 +1,9 @@
+Write a program to change the const integer value of above program (P24), and observe the output.
+#include<stdio.h>
+int main()
+{
+  const int a= 247;
+  a= 250;   
+  printf("%d",a);
+  return 0;
+}
