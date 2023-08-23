@@ -1,0 +1,14 @@
+Write a program to read a number and the print it, include the necessary library functions.
+
+#include <stdio.h>
+
+int main() {
+    int number;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    printf("Entered No: %d\n", number);
+
+    return 0;
+}
