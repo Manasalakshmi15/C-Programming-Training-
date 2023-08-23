@@ -1,0 +1,17 @@
+Write a program and declare 4 variables of bool types. Initialize them as true, false, 0 and any non-zero integer. Print their values and observe the output.
+#include <stdio.h>
+#include <stdbool.h>
+
+int main() {
+  bool a = true;
+  bool b = false;
+  bool 3 = 0;
+  bool 3 = 42;
+
+  printf("a: %d\n", a);
+  printf("b: %d\n", b);
+  printf("c: %d\n", c);
+  printf("d: %d\n", d);
+
+  return 0;
+}
