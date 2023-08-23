@@ -1,0 +1,23 @@
+Write a program to read an integer, floating type number, character, long integer and unsigned long integer and print them.
+
+#include <stdio.h>
+int main()
+{
+  int a;
+  float r;
+  char mychar;
+  long l;
+  unsigned long u;
+  printf("enter a:\n");
+  printf("enter r:\n");
+  printf("enter mychar: %c\n");
+  printf("enter l: %l\n");
+  printf("enter u: %lu\n");
+  scanf("%d", &a);
+  scanf("%f", &r);
+  scanf("%c", &mychar);
+  scanf("%ld", &l);
+  scanf("%lu", &u);
+  printf("%d %f %c %ld %lu", a, r, mychar, l, u);
+  return 0;
+}
