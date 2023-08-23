@@ -1,0 +1,9 @@
+Write a program to define a const integer and print the value 
+
+#include<stdio.h>
+int main()
+{
+  const int a=247;
+  printf("%d",a);
+  return 0;
+}
