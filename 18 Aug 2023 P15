@@ -1,0 +1,15 @@
+WAP to read a floating variable with 6 decimal places and output the same number shortened to 1, 2, 3, 4 and 5 decimal places. 
+Observe how the compiler rounds off the values.
+
+#include <stdio.h>
+int main()
+{
+  float  a= 2.847467;
+  printf("%0.1f\n",a);
+  printf("%0.2f\n",a);
+  printf("%0.3f\n",a);
+  printf("%0.4f\n",a);
+  printf("%0.5f\n",a);
+  printf("%f\n",a);
+  return 0;
+}
