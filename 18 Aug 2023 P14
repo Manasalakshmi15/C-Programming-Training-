@@ -1,0 +1,8 @@
+Write a program and try to initialize an integer with value greater than its size, observe the output/errors you get
+#include <stdio.h>
+int main()
+{
+int a= 277473874848447;
+printf("%d",a);
+return 0;
+}
