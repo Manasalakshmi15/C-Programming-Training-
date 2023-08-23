@@ -1,0 +1,8 @@
+Priting the variable and observe the output.
+#include<stdio.h>
+int main()
+{
+  int a = 247;
+  printf("%d",a);
+  return 0;
+}
