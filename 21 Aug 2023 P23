@@ -1,0 +1,13 @@
+Write a program to print the ASCII value of any key press
+#include <stdio.h>
+
+int main() {
+  char key;
+
+  printf("Press any key: ");
+  scanf("%c", &key);
+
+  printf("The ASCII value of the key '%c' is: %d\n", key, key);
+
+  return 0;
+}
