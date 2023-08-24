@@ -1,4 +1,4 @@
-Write a program that ccepts 3 integers and find the biggest number of the 3 (without using if condition or library functions)
+Write a program that accepts 3 integers and find the biggest number of the 3 (without using if condition or library functions)
 #include <stdio.h>
 
 int main() 
