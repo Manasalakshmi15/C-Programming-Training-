@@ -1,0 +1,3 @@
+Given a non- empty array of inttegers nums, every element appears twice except for one. Find that single element.
+ Test Data: Input - [4,1,2,1,2], Output - [4]
+ 
