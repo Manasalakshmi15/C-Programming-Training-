@@ -1,0 +1,23 @@
+Write a program to readd2 integer values 'a' and 'b'. Perform the following bitwise operations between a and b and store the
+results in new variables: |, &,^,>>,<<. Also perform unitary operations on a: You can validate the results by using pen and paper
+to convert decimals into binary and matchng results.
+
+#include <stdio.h>
+int main() 
+{
+    int a=2, b=3;
+    
+    int andResult = a & b;
+    int xorResult = a ^ b;
+    int leftShiftResult = a << b;
+    int rightShiftResult = a >> b;
+    int orResult = a|b;
+
+    printf("Bitwise AND result: %d\n", andResult);
+    printf("Bitwise XOR result: %d\n", xorResult);
+    printf("Left shift result: %d\n", leftShiftResult);
+    printf("Right shift result: %d\n", rightShiftResult);
+    printf("Bitwise OR result: %d\n", orResult);
+
+    return 0;
+}
