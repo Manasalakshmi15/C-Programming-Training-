@@ -1,0 +1,11 @@
+Assign variable type into hexadecimal 
+#include<stdio.h>
+int main ()
+{
+inta;
+printf("Enter the no:")
+scanf("%d",&a);
+printf("Number entered is %d",a);
+printf("Hexadecimal of the number is %x",a);
+return 0;
+}
