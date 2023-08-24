@@ -1,0 +1,14 @@
+Write a program input number of sides in the polygon and output the sum of its internal angles
+#include <stdio.h>
+int main() 
+{
+    int n,sumangles;
+    printf("Number of sides in the polygon: ");
+    scanf("%d", &n);
+
+    sumangles = (n - 2) * 180;
+
+    printf("The sum of internal angles in the polygon is: %d degrees\n", sumangles);
+
+    return 0;
+}
