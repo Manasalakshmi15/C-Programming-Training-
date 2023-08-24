@@ -1,0 +1,9 @@
+Unsigned char value 
+#include<stdio.h>
+int main ()
+{
+int char = 53;
+unsigned char i = ch;
+printf("Unsigned char: %c\n",i);
+return 0;
+}
