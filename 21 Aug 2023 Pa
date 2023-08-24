@@ -1,0 +1,8 @@
+Write a program using char
+#include<stdio.h>
+{
+char ch;
+ch = '-5';
+printf("character is %c",ch);
+return 0;
+}
