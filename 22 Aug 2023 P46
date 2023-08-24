@@ -1,0 +1,21 @@
+Write a program to read an integer an display its correspnding ASCII character.
+#include <stdio.h>
+
+int main() 
+{
+    int num;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    if (num >= 0 && num <= 127) 
+    {
+        char asciiChar = (char)num;
+        Display the result
+        printf("The ASCII character for %d is: %c\n", num, asciiChar);
+    } 
+    else 
+    {
+        printf("Invalid input. Please enter an integer between 0 and 127.\n");
+    }
+    
+    return 0;
+}
