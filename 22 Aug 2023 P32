@@ -1,0 +1,11 @@
+Write a program to take the given character and print the next character.
+#include<stdo.h>
+int main() 
+{
+    char ip,op;
+    printf("Enter the ip char:");
+    scanf("%c",&ip);
+    op = ip+1;
+    printf("The next of ip %c is: %c\n", ip,op);
+    return 0;
+}
