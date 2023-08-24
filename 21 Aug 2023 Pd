@@ -1,0 +1,13 @@
+scanf("%i")
+
+
+#include<stdio.h>
+int main ()
+{
+int a; 
+printf("Read number using percentage i\n");
+scanf("%i",&a);
+printf("Number entered is %i\n",a);
+printf("Number entered is %d\n",a);
+return 0;
+}
