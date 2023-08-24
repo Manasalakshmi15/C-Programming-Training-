@@ -1,0 +1,26 @@
+Write a program to read two alphabests and check if they are equal (Ex: Both uppercase and lowercase 'a' should match equal)
+#include <stdio.h>
+#include <ctype.h>
+
+int main() 
+{
+    char alphabet1, alphabet2;
+
+    printf("Enter the first alphabet: ");
+    scanf(" %c", &alphabet1);
+    printf("Enter the second alphabet: ");
+    scanf(" %c", &alphabet2);
+    
+    alphabet1 = tolower(alphabet1);
+    alphabet2 = tolower(alphabet2);
+
+    if (alphabet1 == alphabet2) 
+    {
+        printf("The alphabets are equal.\n");
+    } else 
+    {
+        printf("The alphabets are not equal.\n");
+    }
+
+    return 0;
+}
