@@ -1,0 +1,16 @@
+Write a program to read an organizaton name and print the string:
+Welcome to "<organization_name>"
+Test data: Input - "DTRI", Output - Welcome to "DTRI"
+#include <stdio.h>
+
+int main() 
+{
+    char organization[100];
+
+    printf("organization_name: ");
+    scanf("%s", organization);
+
+    printf("Welcome to \"%s\"\n", organization);
+
+    return 0;
+}
