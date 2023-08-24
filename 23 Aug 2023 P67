@@ -1,0 +1,48 @@
+Write  program in C to calculate and print the electricity bill of a given customer. The customer id, name and unit consumed by the
+user should be taken from keyboard and display the total mount to pay to the customer. The charges are as follows:
+  Unit                             Charge/unit
+Upto 99                                @1.20
+200 and above but less than 400        @1.50
+400 and above but less than 600        @1.80
+600 and above                          @2.00
+
+#include<stdio.h>
+int main()
+{
+    int cust_id;
+    char name =" ";
+    float unit,total,bill;
+    printf("enter the cust_id, name and unit:");
+    scanf("%d %s %f",&cust_id,&name,&unit);
+    if(unit<83.33)
+    {
+        printf("the minimum bill is 100/-");
+    }
+    else if(unit>=83.33 && unit<=199)
+    {
+        bill=100+(unit-83.33)*1.20;
+        printf("the bill is %f\n",bill);
+    }
+    else if(unit>=200 && unit<400)
+    {
+        bill=238.8+((unit-199)*1.50);
+        printf("the bill is %f\n",bill);
+    }
+    else if(unit>=400 && unit<600)
+    {   
+        bill=538.8+((unit-399)*1.80);
+        printf("the bill is %f\n",bill);
+    }
+    else if(unit>=600)
+    {
+            bill=898.8+((unit-599)*2.00);
+        printf("the bill is %f\n",bill);
+    }
+    if(bill>400)
+    {
+        total=(bill*0.15)+bill;
+        printf("the total amount is %f\n",total);
+    }
+    return 0;
+
+}
