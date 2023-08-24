@@ -1,0 +1,76 @@
+Write a program to input Math,Science,English,Kannada and History marks of a student. Calculte his average marks,total marks and
+categorize the result as one of the follwing: Distinction(>90),First class(>60), Second class(>=35). Also print the number of passed
+and failed subjects.
+#include <stdio.h>
+
+int main() {
+    int math, science, english, kannada, history;
+    float average;
+    int total, pass,fail;
+
+    printf("Enter Math marks: ");
+    scanf("%d", &math);
+    total += math;
+    if (math >= 35) {
+        pass++;
+    } else {
+        fail++;
+    }
+
+    printf("Enter Science marks: ");
+    scanf("%d", &science);
+    total += science;
+    if (science >= 35) {
+        pass++;
+    } else {
+        fail++;
+    }
+
+    printf("Enter English marks: ");
+    scanf("%d", &english);
+    total += english;
+    if (english >= 35) {
+        pass++;
+    } else {
+        fail++;
+    }
+
+    printf("Enter Kannada marks: ");
+    scanf("%d", &kannada);
+    total += kannada;
+    if (kannada >= 35) {
+        pass++;
+    } else {
+        fail++;
+    }
+
+    printf("Enter History marks: ");
+    scanf("%d", &history);
+    total += history;
+    if (history >= 35) {
+        pass++;
+    } else {
+        fail++;
+    }
+    total=math+english+kannada+history+science;
+
+    average = total/ 5.0;
+
+    printf("Average marks: %.2f\n", average);
+    printf("Total marks: %d\n", total);
+
+    if (average > 90) {
+        printf("Result: Distinction\n");
+    } else if (average > 60) {
+        printf("Result: First Class\n");
+    } else if (average >= 35) {
+        printf("Result: Second Class\n");
+    } else {
+        printf("Result: Fail\n");
+    }
+
+    printf("Passed subjects: %d\n", pass);
+    printf("Failed subjects: %d\n", fail);
+
+    return 0;
+}
