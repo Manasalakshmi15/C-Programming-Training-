@@ -1,0 +1,24 @@
+Write a program to check weather the given number is pallindrome or not
+#include<stdio.h>
+int main()
+{
+    int number,copy_no,remainder,sum;
+    printf("Enter the number:");
+    scanf("%d",&number);
+    copy_no=number;
+    while(number>0)
+    {
+        remainder=number%10;
+        sum=(sum*10)+remainder;
+        number=number/10;
+    }
+    if(copy_no==sum)
+    {
+        printf("The number %d is pallindrome",copy_no);
+    }
+    else
+    {
+        printf("The number %d is not pallindrome",copy_no);
+    }
+    return 0;
+}
