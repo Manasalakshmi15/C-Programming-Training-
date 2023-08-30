@@ -1,0 +1,55 @@
+Write a program to check weather the given number is arstrong or not. Also write a program to print N armstrong numbers.
+#include<stdio.h>
+#include<math.h>
+
+int count_no_of_digits(int number, int no_of_digits);
+int arm_strong(int number);
+
+
+
+int count_no_of_digits(int number, int no_of_digits)
+{
+    //CALCULATING THE NUMBER OF DIGITS
+    while(number>0)
+    {
+        number=number/10;
+        no_of_digits++;
+    }
+    return no_of_digits;
+}
+int arm_strong(int number)
+{
+    int sum=0,current_no,temp=number,no_of_digits;
+    //CALCULATING THE SUM OF DIGITS RAISED TO NUMBER OF DIGITS
+    no_of_digits = count_no_of_digits(number,no_of_digits);
+    while(temp>0)
+    {
+        current_no=(temp%10);
+        sum+=pow(current_no,no_of_digits);
+        temp=temp/10;
+    }
+    if (sum==number)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+int main()
+{
+    int number,arm_strong_no;
+    printf("Enter the number:");
+    scanf("%d",&number);
+    arm_strong_no=arm_strong(number);
+    if (arm_strong_no==1)
+    {
+        printf("The number %d is armstrong",number);
+    }
+    else
+    {
+        printf("The number %d i not armstrong",number);
+    }
+    return 0;
+}
