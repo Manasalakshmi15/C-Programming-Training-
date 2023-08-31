@@ -1,0 +1,20 @@
+Write a function that takes an integer and floating point as arguments and print their products
+#include<stdio.h>
+
+int product(int num1, float num2)
+{
+    int product_result = (int) num1*(float) num2;
+    printf("The product is %d",product_result);
+    //return result_product;
+}
+int main()
+{
+    int num1;
+    printf("Enter the 1st num:");
+    scanf("%d",&num1);
+    float num2;
+    printf("Enter the 2nd num:");
+    scanf("%f",&num2);
+    product(num1,num2);
+    return 0;
+}
