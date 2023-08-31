@@ -1,0 +1,20 @@
+Within a function declare the variables of type int, char, float and double without intiaizing them. Use printf() within the function to print
+all their values. Invoke the function within main() and observe the output. How does the output differ from the previous program and why.
+#include<stdio.h>
+int print ()
+{
+    int num ;
+    char ch;
+    float f;
+    double d;
+    printf("%d %c %f %lf",num,ch,f,d);
+}
+char ch;
+float f;
+double d;
+int main()
+{
+
+    print();
+    return 0;
+}
