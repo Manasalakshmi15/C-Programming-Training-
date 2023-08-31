@@ -1,0 +1,12 @@
+Declare a variablenames 'var' both globally and locally within main (), with different values initialized in ech case. Print its value and
+observe the output.
+#include<stdio.h>
+int var = 47;
+int main()
+{
+    int var = 247;
+    printf("%d",var);
+    return 0;
+}
+
+//First preference is given to local variable.
