@@ -1,0 +1,16 @@
+Decalre gloalvariable of types int, char, float,and double without initializing them. Print the values and observe the output. 
+Do the same for local variables.
+#include<stdio.h>
+int num;
+char ch;
+float f;
+double d;
+int main()
+{
+    int num ;
+    char ch;
+    float f;
+    double d;
+    printf("%d %c %f %lf",num,ch,f,d);
+    return 0;
+}
