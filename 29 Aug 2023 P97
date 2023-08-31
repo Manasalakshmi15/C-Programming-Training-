@@ -1,0 +1,14 @@
+Write a program with any function that takes arguments but  returns no value 
+#include<stdio.h>
+
+void print (char c)
+{
+    printf("Hi");
+    printf("%c",c);
+}
+int main ()
+{
+    char a;
+    print(a);
+    return 0;
+}
