@@ -1,0 +1,16 @@
+Write a program to convert a string to uppercase.
+
+Program:
+#include <stdio.h>
+#include<string.h>
+
+int main()
+{
+    char s1[7]="manasa";
+    printf("The given string is %s",s1);
+    printf("\nUppercase is represented as %s",strupr(s1));
+    return 0;
+}
+ Output:
+The given string is manasa
+Uppercase is represented as MANASA
