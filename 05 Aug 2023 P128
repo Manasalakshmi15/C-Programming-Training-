@@ -1,0 +1,16 @@
+Write a program to find the simple declaration of a pointer.
+
+Program:
+
+#include<stdio.h>
+
+int main()
+{
+    int num=20;
+    int *ptr=&num;
+    printf("address of num is %p",ptr);
+    return 0;
+}
+
+Output:
+address of num is 000000000061FE14
