@@ -1,0 +1,17 @@
+Write a program to read S1 and copy it to another string S2 and then print it.
+
+Program:
+#include <stdio.h>
+#include<string.h>
+
+int main() 
+{
+    char s1[7]="Manasa";
+    char s2[7];
+    strcpy(s2,s1);
+    printf("s2:%s",s2);
+    return 0;
+}
+
+Output:
+s2:Manasa
