@@ -1,0 +1,29 @@
+Write a program to read a string and print the number of times a given character appears.
+
+Program:
+#include<stdio.h>
+int main ()
+{
+    char s[10];
+    char ch;
+    int count=0;
+    printf("The string is:");
+    scanf("%s",&s);
+    printf("The character you want:");
+    scanf(" %c",&ch);
+    for(int i=0;s[i];i++)
+    {
+        if (s[i]==ch)
+        {
+            count++;
+        }
+    }
+    printf("The number of times the %c is present in the string is %d.",ch,count);
+
+    return 0;
+}
+
+Output:
+The string is:Manasa
+The character you want:a
+The number of times the a is present in the string is 3.
