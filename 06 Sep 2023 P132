@@ -1,0 +1,32 @@
+Write a program to store n elements in an array and print the elements using pointers.
+
+Program:
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter the size of array:");
+    scanf("%d",&num);
+    elements(&num);
+    return 0;
+}
+int elements(int *n)
+{
+    int a[*n],i;
+    for(i=0;i<*n;i++)
+    {
+        a[i]=i;
+        printf("\nThe elements in array a[%d] are: %d",i,a[i]);
+    }
+
+}
+
+Output:
+Enter the size of array:6
+
+The elements in array a[0] are: 0
+The elements in array a[1] are: 1
+The elements in array a[2] are: 2
+The elements in array a[3] are: 3
+The elements in array a[4] are: 4
+The elements in array a[5] are: 5
