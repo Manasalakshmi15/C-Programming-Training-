@@ -1,0 +1,21 @@
+Wriye a program to add two numbers using pointers.
+
+Program:
+#include<stdio.h>
+int add(int *a,int *b);
+int main ()
+{
+
+    int num_1 = 2,num_2 = 3;
+    int sum=add(&num_1,&num_2);
+    printf("sum is %d",sum);
+    return 0;
+}
+int add(int *a,int *b)
+{
+    int result = *a + *b;
+    return result;
+}
+
+Output:
+sum is 5
