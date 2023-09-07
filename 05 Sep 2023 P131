@@ -1,0 +1,31 @@
+ Write a program to find the maximum between two numbers using a pointer.
+
+Program:
+#include<stdio.h>
+int max_num(int *a,int *b);
+int main ()
+{
+    int num_1,num_2;
+    printf("Enter first number:");
+    scanf("%d",&num_1);
+    printf("Enter second number:");
+    scanf("%d",&num_2);
+    max_num(&num_1,&num_2);
+    return 0;
+}
+int max_num(int *a,int *b)
+{
+    if(*a>*b)
+    {
+        printf("The maximum number is %d",*a);
+    }
+    else
+    {
+        printf("The maximum number is %d",*b);
+    }
+}
+
+output:
+Enter first number:3
+Enter second number:4
+The maximum number is 4
