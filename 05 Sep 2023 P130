@@ -1,0 +1,23 @@
+Write a program to add numbers using call by pointer
+
+Program:
+#include<stdio.h>
+int add(int *a,int *b);
+int main ()
+{
+
+    int num_1 = 2,num_2 = 3;
+    int *ptr1=&num_1;
+    int *ptr2=&num_2;
+    int sum=add(ptr1,ptr2);
+    printf("sum is %d",sum);
+    return 0;
+}
+int add(int *a,int *b)
+{
+    int result = *a + *b;
+    return result;
+}
+
+Output:
+sum is 5
