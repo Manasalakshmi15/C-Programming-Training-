@@ -1,0 +1,57 @@
+Write a program to arrange student records in descending order of marks.
+
+Program:
+#include<stdio.h>
+struct student
+{
+    char student_name[20];
+    int roll_no;
+    int total_marks;
+};
+int main()
+{
+    struct student a[10],temp;
+    int n;
+    printf("enter n:");
+    scanf("%d",&n);
+    for(int i=0; i<n; i++)
+    {
+        printf("Enter the name roll_no and marks");
+        scanf("%s%d%d",&a[i].student_name,&a[i].roll_no,&a[i].total_marks);
+    }
+    int i,j;
+    for (i=0; i<n-1; i++)
+    {
+        for(j=i+1; j<n; j++)
+        {
+            if(a[i].total_marks<a[j].total_marks)
+            {
+                temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
+            }
+        }
+    }
+    for(int i=0; i<4; i++)
+    {
+        printf("name:%s\n",a[i].student_name);
+        printf("roll: %d\n",a[i].roll_no);
+        printf("marks : %d\n",a[i].total_marks);
+    }
+    return 0;
+}
+
+Output:
+enter n:3
+Enter the name roll_no and marksManasa 01 500
+Enter the name roll_no and marksLakshmi 09 400
+Enter the name roll_no and marksRoyyuru 03 300
+name:Manasa
+roll: 1
+marks : 500
+name:Lakshmi
+roll: 9
+marks : 400
+name:Royyuru
+roll: 3
+marks : 300
