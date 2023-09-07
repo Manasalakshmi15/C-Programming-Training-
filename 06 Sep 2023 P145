@@ -1,0 +1,40 @@
+ Write to print the age of the student using date of birth details.
+
+Program:
+#include<stdio.h>
+    struct student
+    {
+        int roll_no;
+        char student_name[15];
+        struct date_of_birth
+        {
+            int date;
+            int month;
+            int year;
+        }bd,cd;
+    };
+int main()
+{
+    int result;
+    struct student a;
+    printf("Enter the student details:");
+    printf("\nRoll No:");
+    scanf("%d",&a.roll_no);
+    printf("\nName of the student:");
+    scanf("%s",&a.student_name);
+    printf("Date of birth:");
+    scanf("%d-%d-%d",&a.bd.date,&a.bd.month,&a.bd.year);
+    printf("Current Date:");
+    scanf("%d-%d-%d",&a.cd.date,&a.cd.month,&a.cd.year);
+    result=a.cd.year-a.bd.year;
+    printf("The age of student in years:%d",result);
+    return 0;
+}
+
+Output:
+Enter the student details:
+Roll No:01
+Name of the student:Name
+Date of birth:15-07-1999
+Current Date:07-07-2015
+The age of student in years:16
