@@ -1,0 +1,26 @@
+Write a program to create a structure and display its elements.
+
+Program:
+#include<stdio.h>
+int main()
+{
+    struct employee
+    {
+        char name[20];
+        int employee_id;
+        int age;
+        float salary;
+    }e1;
+    printf("Enter the employee details,Name of the employee,Employee Id,Age of the employee,Salary of the employee:");
+    scanf("%s%d%d%f",&e1.name,&e1.employee_id,&e1.age,&e1.salary);
+    printf("\nName of the employee:%s \nEmployee Id:%d \nAge of the employee:%d \nSalary of the employee:%f", e1.name,e1.employee_id,e1.age,e1.salary);
+    return 0;
+}
+
+Output:
+Enter the employee details,Name of the employee,Employee Id,Age of the employee,Salary of the employee:ManasaLakshmi 23 20068163 30000
+
+Name of the employee:ManasaLakshmi
+Employee Id:23
+Age of the employee:20068163
+Salary of the employee:30000.000000
