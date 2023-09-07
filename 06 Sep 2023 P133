@@ -1,0 +1,28 @@
+ Write a program to calculate the length of the string using a pointer.
+
+Program:
+#include<stdio.h>
+int len(char *n);
+int main()
+{
+    char str[10];
+    printf("Enter the string:");
+    scanf("%s",&str);
+    len(str);
+    return 0;
+}
+
+int len(char *n)
+{
+    int i=0,len=0;
+    while(*(n+i++))
+    {
+        len++;
+    }
+
+    printf("The length of string is %d",len);
+
+}
+Output:
+Enter the string:Manasa
+The length of string is 6
