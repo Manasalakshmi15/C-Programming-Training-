@@ -1,0 +1,42 @@
+Write a program to find the average of a 1-D array.
+
+Program:
+
+#include<stdio.h>
+int main ()
+{
+    int n,i,sum=0,average;
+    printf("Enter the size of array:");
+    scanf("%d",&n);
+    int a[n];
+    printf("The elements of array are:");
+    for(i =0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i =0;i<n;i++)
+    {
+        printf("\nThe elements are: %d",a[i]);
+    }
+    for(i =0;i<=n;i++)
+    {
+        sum = sum+i;
+    }
+    printf("\nThe sum of elements in an array is %d",sum);
+    average = sum/n;
+    printf("\nThe average of elements in an array is %d",average);
+    return 0;
+}
+
+Output:
+Enter the size of array:5
+
+The elements of array are:1 2 3 4 5
+
+The elements are: 1
+The elements are: 2
+The elements are: 3
+The elements are: 4
+The elements are: 5
+The sum of elements in an array is 15
+The average of elements in an array is 3
