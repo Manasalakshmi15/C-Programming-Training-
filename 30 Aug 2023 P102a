@@ -1,0 +1,50 @@
+Write a program to count the total number of duplicate elements in as 1-D array
+
+Program:
+#include <stdio.h>
+
+int main()
+{
+    int n,i,j,count=0;
+    printf("Enter the size of the array:");
+    scanf("%d",&n);
+    int a[n];
+    printf("Enter the elements of the array: ");
+    for(i=0; i<n; i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("\nThe element in array are:");
+    for(i=0; i<n; i++)
+    {
+        printf("\n%d",a[i]);
+    }
+    for(i =0; i<n; i++)
+    {
+        for (j=i+1; j<n; j++)
+        {
+            if(a[i]==a[j])
+            {
+               count++;
+               break;
+            }
+        }
+    }
+    printf("\nThe number of times of the duplicate elements repeated are %d",count);
+    return 0;
+}
+
+Outside:
+Enter the size of the array:8
+Enter the elements of the array: 1 2 3 3 5 5 7 9
+
+The element in array are:
+1
+2
+3
+3
+5
+5
+7
+9
+The number of times of the duplicate elements repeated are 2
