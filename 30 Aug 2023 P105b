@@ -1,0 +1,112 @@
+Write a proram to multiply two matrices.
+
+Program:
+#include<stdio.h>
+int main ()
+{
+    int r1,c1,r2,c2;
+    printf("Enter the rows and columns of MATRIX A:");
+    scanf("%d%d",&r1,&c1);
+    printf("Enter the rows and columns of MATRIX B:");
+    scanf("%d%d",&r2,&c2);
+    if (c1!=r2)
+    {
+        printf("\nThe multiplication is not possible");
+    }
+    else
+    {
+        int a[r1][c1],b[r2][c2],c[r1][c2],i,j,k;
+        printf("\nEnter the elements of MATRIX A:");
+        for (i=0; i<r1; i++)
+        {
+            for (j=0; j<c1; j++)
+            {
+                scanf("%d",&a[i][j]);
+            }
+        }
+        printf("\n......The elements in matrix A are......");
+        for (i=0; i<r1; i++)
+        {
+            printf("\n");
+            for (j=0; j<c1; j++)
+            {
+                printf("\t%d",a[i][j]);
+            }
+            printf("\n");
+        }
+        printf("\nEnter the elements of MATRIX B:");
+        for (i=0; i<r2; i++)
+        {
+            for (j=0; j<c2; j++)
+            {
+                scanf("%d",&b[i][j]);
+            }
+        }
+        printf("\n......The elements in matrix B are......");
+        for (i=0; i<r2; i++)
+        {
+            printf("\n");
+            for (j=0; j<c2; j++)
+            {
+                printf("\t%d",b[i][j]);
+            }
+            printf("\n");
+        }
+
+        for (i=0; i<r1; i++)
+        {
+            for (j=0; j<c2; j++)
+            {
+                c[i][j]=0;
+                for (k=0; k<c1; k++)
+                {
+                    c[i][j]+=a[i][k]*b[k][j];
+                }
+            }
+        }
+        printf("\n......The product of MATRIX A and MATRIX B is in matrix C are......");
+        for (i=0; i<r1; i++)
+        {
+            printf("\n");
+            for (j=0; j<c2; j++)
+            {
+                printf("\t%d",c[i][j]);
+            }
+            printf("\n");
+        }
+    }
+
+    return 0;
+}
+
+Output:
+
+Enter the rows and columns of MATRIX A:2 3
+Enter the rows and columns of MATRIX B:3 2
+
+Enter the elements of MATRIX A:1 2 3 4 5 6
+
+......The elements in matrix A are......
+        1       2       3
+
+        4       5       6
+
+Enter the elements of MATRIX B:1 2 3 4 5 6
+
+......The elements in matrix B are......
+        1       2
+
+        3       4
+
+        5       6
+
+......The product of MATRIX A and MATRIX B is in matrix C are......
+        22      28
+
+        49      64
+
+
+Enter the rows and columns of MATRIX A:2 2
+Enter the rows and columns of MATRIX B:3 2
+
+The multiplication is not possible
