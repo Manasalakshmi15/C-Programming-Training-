@@ -1,0 +1,55 @@
+Write a program to find the largest and smallest in array 
+
+Program:
+#include<stdio.h>
+int main ()
+{
+    int n;
+    printf("Enter the size of array:");
+    scanf("%d",&n);
+    int a[n];
+    printf("\nEnter the elements of an array:");
+    for (int i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("\n.....The elements in array are....");
+    int largest=a[0],smallest=a[0];
+    for (int i=0;i<n;i++)
+    {
+        printf("\n\t%d",a[i]);
+    }
+    for (int i=0;i<n;i++)
+    {
+        if (a[i]>largest)
+        {
+            largest = a[i];
+        }
+        else if (a[i]<smallest)
+        {
+            smallest = a[i];
+        }
+    }
+    printf("\nThe largest = %d and the smallest = %d",largest,smallest);
+    return 0;
+
+}
+
+Output:
+
+Enter the size of array:10
+
+Enter the elements of an array: 29 86 56 84 37 66 44 87 09 100
+
+.....The elements in array are....
+        29
+        86
+        56
+        84
+        37
+        66
+        44
+        87
+        9
+        100
+The largest = 100 and the smallest = 9
