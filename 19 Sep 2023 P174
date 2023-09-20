@@ -1,0 +1,100 @@
+WAP to insert a node at the nth position of a singly linked list.
+
+Program:
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+struct employee
+{
+    int serial_number;
+    char name[20];
+    struct employee *next;
+};
+int main()
+{
+    struct employee *head;
+    head=malloc(sizeof(struct employee));
+
+    struct employee *current=head;
+    current->serial_number=10;
+    strcpy(current->name,"kilari");
+    current->next=malloc(sizeof(struct employee));
+
+    current=current->next;
+    current->serial_number=12;
+    strcpy(current->name,"royyuru");
+    current->next=malloc(sizeof(struct employee));
+
+    current =current->next;
+    current->serial_number=16;
+    strcpy(current->name,"manasa");
+    current->next=NULL;
+
+    current=head;
+    while(1)
+    {
+        if(current)
+        {
+            printf("%s is %d\n",current->name,current->serial_number);
+            current=current->next;
+        }
+        else
+            break;
+    }
+
+    printf("Enter the position: ");
+    int position;
+    scanf("%d",&position);
+    int count=1;
+    current=head;
+
+    if(position==1)
+    {
+        struct employee *add=head;
+        head=malloc(sizeof(struct employee));
+        current=head;
+        current->serial_number=23;
+        strcpy(current->name,"lakshmi");
+        current->next=add;
+        goto label;
+    }
+
+    while(count+1<position)
+    {
+        current=current->next;
+        count++;
+    }
+
+    struct employee *add=current->next;
+    current->next=malloc(sizeof(struct employee));
+    current=current->next;
+    current->serial_number=23;
+    strcpy(current->name,"geethu");
+    current->next=add;
+
+    current=head;
+label:
+    while(1)
+    {
+        if(current)
+        {
+            printf("%s is %d\n",current->name,current->serial_number);
+            current=current->next;
+        }
+        else
+            break;
+    }
+
+
+    return 0;
+}
+
+Output:
+kilari is 10
+royyuru is 12
+manasa is 16
+Enter the position: 4
+kilari is 10
+royyuru is 12
+manasa is 16
+geethu is 23
