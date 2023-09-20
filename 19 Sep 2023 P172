@@ -1,0 +1,38 @@
+Write a program to create and display Singly Linked List.
+
+Program:
+#include<stdio.h>
+#include<string.h>
+struct list
+{
+    char name[20];
+    struct list *next_address;
+};
+int main ()
+{
+    struct list *head = NULL;
+    head = malloc(sizeof(struct list));
+    struct list *current=head;
+    strcpy(current -> name,"Manasa");
+    current -> next_address = malloc(sizeof(struct list));
+    current = current -> next_address;
+    strcpy(current->name,"Lakshmi");
+    current->next_address = NULL;
+    current =head;
+    while(1)
+    {
+        if (current!=0)
+        {
+            printf("%s\n",current->name);
+            current = current -> next_address;
+        }
+        else
+        {
+            break;
+        }
+    }
+}
+
+Output:
+Manasa
+Lakshmi
