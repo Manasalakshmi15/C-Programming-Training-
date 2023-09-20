@@ -1,0 +1,104 @@
+Write  program to insert a node at the a) beginning of a singly linked list. b) end of a singly linked list.
+
+Program(a):
+
+#include<stdio.h>
+#include<stdlib.h>
+struct employee
+{
+    int serial_number;
+    char name[20];
+    struct employee *next;
+};
+int main()
+{
+    struct employee *head;
+    head=malloc(sizeof(struct employee));
+    struct employee *current=head;
+    current->serial_number=10;
+    strcpy(current->name,"manasa");
+    current->next=malloc(sizeof(struct employee));
+
+    current=current->next;
+    current->serial_number=12;
+    strcpy(current->name,"lakshmi");
+    current->next=NULL;
+
+    struct employee *add=head;
+    head=malloc(sizeof(struct employee));
+    current=head;
+
+    current->serial_number=14;
+    strcpy(current->name,"royyuru");
+    current->next=add;
+
+    current=head;
+    while(1)
+    {
+        if(current)
+        {
+            printf("%d is %s\n",current->serial_number,current->name);
+            current=current->next;
+        }
+        else
+            break;
+    }
+
+    return 0;
+}
+
+Output:
+14 is royyuru
+10 is manasa
+12 is lakshmi
+
+Program(b):
+
+#include<stdio.h>
+#include<stdlib.h>
+struct employee
+{
+    int serial_number;
+    char name[20];
+    struct employee *next;
+};
+int main()
+{
+    struct employee *head;
+    head=malloc(sizeof(struct employee));
+    struct employee *current=head;
+    current->serial_number=10;
+    strcpy(current->name,"manasa");
+    current->next=malloc(sizeof(struct employee));
+
+    current=current->next;
+    current->serial_number=12;
+    strcpy(current->name,"lakshmi");
+    current->next=NULL;
+
+    current->next=malloc(sizeof(struct employee));
+    current =current->next;
+    current->serial_number=16;
+    strcpy(current->name,"royyuru");
+    current->next=NULL;
+
+    current=head;
+    while(1)
+    {
+        if(current)
+        {
+            printf("%d is %s\n",current->serial_number,current->name);
+            current=current->next;
+        }
+        else
+            break;
+    }
+
+    return 0;
+}
+
+Output:
+
+10 is manasa
+12 is lakshmi
+16 is royyuru
