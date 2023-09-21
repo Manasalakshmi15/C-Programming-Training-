@@ -1,0 +1,249 @@
+Linear Search
+
+Program:
+#include<stdio.h>
+int main ()
+{
+    int size,num;
+    printf("Enter the size of array:");
+    scanf("%d",&size);
+    int rand_arr[size];
+
+    for (int i=0; i<size; i++)
+    {
+        rand_arr[i]=rand()%100;
+
+    }
+    for (int i=0; i<size; i++)
+    {
+        printf("\nrand_arr[%d] = %d\t\n",i,rand_arr[i]);
+    }
+    printf("Enter the number to be searched:");
+    scanf("%d",&num);
+    int count=0;
+    for (int i=0; i<size; i++)
+    {
+        if (rand_arr[i]==num)
+        {
+            printf("\nThe number is present at %d",i);
+            count++;
+            break;
+        }
+    }
+    if(count==0)
+    {
+        printf("The number is not in the generated array");
+    }
+    return 0;
+}
+
+Output:
+Enter the size of array:50
+
+rand_arr[0] = 41
+
+rand_arr[1] = 67
+
+rand_arr[2] = 34
+
+rand_arr[3] = 0
+
+rand_arr[4] = 69
+
+rand_arr[5] = 24
+
+rand_arr[6] = 78
+
+rand_arr[7] = 58
+
+rand_arr[8] = 62
+
+rand_arr[9] = 64
+
+rand_arr[10] = 5
+
+rand_arr[11] = 45
+
+rand_arr[12] = 81
+
+rand_arr[13] = 27
+
+rand_arr[14] = 61
+
+rand_arr[15] = 91
+
+rand_arr[16] = 95
+
+rand_arr[17] = 42
+
+rand_arr[18] = 27
+
+rand_arr[19] = 36
+
+rand_arr[20] = 91
+
+rand_arr[21] = 4
+
+rand_arr[22] = 2
+
+rand_arr[23] = 53
+
+rand_arr[24] = 92
+
+rand_arr[25] = 82
+
+rand_arr[26] = 21
+
+rand_arr[27] = 16
+
+rand_arr[28] = 18
+
+rand_arr[29] = 95
+
+rand_arr[30] = 47
+
+rand_arr[31] = 26
+
+rand_arr[32] = 71
+
+rand_arr[33] = 38
+
+rand_arr[34] = 69
+
+rand_arr[35] = 12
+
+rand_arr[36] = 67
+
+rand_arr[37] = 99
+
+rand_arr[38] = 35
+
+rand_arr[39] = 94
+
+rand_arr[40] = 3
+
+rand_arr[41] = 11
+
+rand_arr[42] = 22
+
+rand_arr[43] = 33
+
+rand_arr[44] = 73
+
+rand_arr[45] = 64
+
+rand_arr[46] = 41
+
+rand_arr[47] = 11
+
+rand_arr[48] = 53
+
+rand_arr[49] = 68
+Enter the number to be searched:26
+
+The number is present at 31
+
+
+Enter the size of array:50
+
+rand_arr[0] = 41
+
+rand_arr[1] = 67
+
+rand_arr[2] = 34
+
+rand_arr[3] = 0
+
+rand_arr[4] = 69
+
+rand_arr[5] = 24
+
+rand_arr[6] = 78
+
+rand_arr[7] = 58
+
+rand_arr[8] = 62
+
+rand_arr[9] = 64
+
+rand_arr[10] = 5
+
+rand_arr[11] = 45
+
+rand_arr[12] = 81
+
+rand_arr[13] = 27
+
+rand_arr[14] = 61
+
+rand_arr[15] = 91
+
+rand_arr[16] = 95
+
+rand_arr[17] = 42
+
+rand_arr[18] = 27
+
+rand_arr[19] = 36
+
+rand_arr[20] = 91
+
+rand_arr[21] = 4
+
+rand_arr[22] = 2
+
+rand_arr[23] = 53
+
+rand_arr[24] = 92
+
+rand_arr[25] = 82
+
+rand_arr[26] = 21
+
+rand_arr[27] = 16
+
+rand_arr[28] = 18
+
+rand_arr[29] = 95
+
+rand_arr[30] = 47
+
+rand_arr[31] = 26
+
+rand_arr[32] = 71
+
+rand_arr[33] = 38
+
+rand_arr[34] = 69
+
+rand_arr[35] = 12
+
+rand_arr[36] = 67
+
+rand_arr[37] = 99
+
+rand_arr[38] = 35
+
+rand_arr[39] = 94
+
+rand_arr[40] = 3
+
+rand_arr[41] = 11
+
+rand_arr[42] = 22
+
+rand_arr[43] = 33
+
+rand_arr[44] = 73
+
+rand_arr[45] = 64
+
+rand_arr[46] = 41
+
+rand_arr[47] = 11
+
+rand_arr[48] = 53
+
+rand_arr[49] = 68
+Enter the number to be searched:101
+The number is not in the generated array
